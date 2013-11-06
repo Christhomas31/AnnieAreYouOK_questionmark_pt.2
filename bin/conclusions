@@ -1,0 +1,30 @@
+Serial: LAb 6 echo server
+Threaded: Using potentially infinite threads
+threadpool: Using thread pools
+
+# of clients = 1
+serial: 4 sec
+threaded: 3 sec
+threadpool: 4 sec
+
+# of clients = 5 
+serial: 6 sec
+threaded: 3 sec
+threadpool: 3 sec
+
+# of clients = 10
+serial: 10 sec
+threaded: 4 sec
+threadpool: 4 sec
+
+# of clients = 20
+serial: 18 sec
+threaded: 8 sec
+threadpool: 8 sec
+
+# of clients = 40
+serial: 35 sec
+threaded: broke
+threadpool: broke
+
+Conclusion: The threaded and the threadpool solution seemed to be more efficient when clients was more then 1 and less ~40 (Due to out of memory errors).
